@@ -1,0 +1,4 @@
+:1200 {
+	root * /app
+	file_server
+}
