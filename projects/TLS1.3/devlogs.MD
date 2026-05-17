@@ -1,0 +1,2 @@
+# Started migrating to state machine - Fri 5/15/26 to Sa 5/16/26
+Torn down all of main.c which contained all TLS handshake logic and moved a ton of logic to the new state_machine.c file, which has the main state machine. Modified the byte parsing logic record to align with the standard c style of not returning things and instead put them into a pointer. ClientHello and ServerHello.c/.h file were modified to add better logging and to look like openssl's s_client tool. Extensions.c was also touched to remove asserts and start using return codes.
