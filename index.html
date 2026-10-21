@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="stylesheet.css">
+        <title>Whynotjava Website</title>
     </head>
 
     <body>
@@ -25,18 +26,65 @@
             <img src="best-dog-ever.jpeg" class="dog-1" alt="Best Dog Ever Picture">
             <caption>This photo was taken and edited on a iPhone</caption>
             <div class="big-border"></div>
+
+            <section>
+                <h1>List of Little fixes that I never remeber</h1>
+            </section>
+            <div class="q-a">
+                <indent>
+                    <h3>Run TLOU 2 through proton:</h3>
+                    <p>
+                    <code style="font-size: 9px; margin: 1rem;">PROTON_DISABLE_NVAPI=1 PROTON_HIDE_NVIDIA_GPU=1 WINE_USE_KWIN_HACKS=1  PROTON_ENABLE_WAYLAND=1 %command%</code>
+                        <br>
+                        <span style="margin: 3rem;"><i>note:</i>remove <code>WINE_USE_KWIN_HACKS</code> if not on KDE</span>
+                    </p>
+                </indent>
+                <indent>
+                    <h3>
+                        Disable firefox's terrible UI update:
+                    </h3>
+                        <p>
+                            in <code>about:config</code> set <code>browser.nova.enabled</code> to <code>false</code>
+                        </p>
+                    </h3>
+                </indent>
+                <indent>
+                    <h3>
+                        Enbaled/disable updating a package in pacman:
+                    </h3>
+                    <p>
+                        in <code>/etc/pacman.conf</code> under <code>[options]</code> put the package name in <code>IgnorePkg</code>
+                        <br>
+                        <span style="margin: 3rem;"><i>note:</i> packages are seperated by commas.<br> The entire file can be reset by replacing it with<br> <code>/etc/pacman.conf.pacnew</code> on CachyOS</span>
+                    </p>
+                </indent>
+                <indent>
+                    <h3>Make file wildcards:</h3>
+                    <p>
+                        I quote <code>The $< is the input" of the rule, $@ is the "output"</code> meaning...<br>
+                        use them in such a way:<pre style="background-color: var(--light-dark); padding: 0.1rem 0.2rem;">
+.c :
+	$(CC) $(CFLAGS) -c -o $@ $<</pre>
+                    </p>
+                </indent>
+            </div>
+
             <section>
                 <h1>Questions No Body Asked</h1>
             </section>
             <div class="small-border"></div>
             <div class="q-a">
                 <indent>
-                    <h3>Q: Does this website useful or have any good content?</h3>
+                    <h3>Q: Is this website useful or have any good content?</h3>
                     <p>No, not really.</p>
                 </indent>
                 <indent>
                     <h3>Q: Whats your email?</h3>
                     <p>me@whynotjava.net</p>
+                </indent>
+                <indent>
+                    <h3>Q: Wana try a shitty auth system? No... Too bad!</h3>
+                    <p><a href="https://otso.whynotjava.net">otso.whynotjava.net</a></p>
                 </indent>
             </div>
 
@@ -48,9 +96,15 @@
                 <img src="projects/TLS1.3/TLS1.3-88x31.png">
             </a>
             <a href="https://github.com/whynotjava">
-                <img src="/github-88x31.png" width="88" height="">
+                <img src="/github-88x31.png" width="88" height="31">
             </a>
-            <a href="https://github.com/WeirdandWhistle/whynotjava.net-main-page">Github Repo</a>
+            <a href="https://cachyos.org">
+                <img width="88" height="31" src="/cachyos-88x31.png">
+            </a>
+            <a href="https://github.com/WeirdandWhistle/whynotjava.net-main-page">
+                <img src="/repo-88x31.png">
+            </a>
+            <a href="https://88x31.datakra.sh" target="_blank"><img src="https://88x31.datakra.sh/datakrash_88x31buttongenerator.gif" alt="88x31 Button Generator by Datakrash" width="88" height="31" style="image-rendering: -moz-crisp-edges; image-rendering: crisp-edges; image-rendering: pixelated;"><br>
         </p>
         
         <script src="app.js"></script>
