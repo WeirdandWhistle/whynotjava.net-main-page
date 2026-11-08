@@ -63,7 +63,7 @@
                     <p>
                         I quote <code>The $< is the input" of the rule, $@ is the "output"</code> meaning...<br>
                         use them in such a way:<pre style="background-color: var(--light-dark); padding: 0.1rem 0.2rem;">
-.c :
+%.o : %.c %.h
 	$(CC) $(CFLAGS) -c -o $@ $<</pre>
                     </p>
                 </indent>
